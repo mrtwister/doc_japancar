@@ -4,7 +4,7 @@
 | :--- | :--- | :--- |
 | s\_sn | набор символов длиной не более 255 символов. | код программы |
 | p\_version | текст длиной не более 255 символов | версия программы |
-| action | ins | действие выполняемое с данными |
+| action | ins\_f | действие выполняемое с данными |
 | id\[n\] | набор символов длиной не более 255 символов. | уникальный номер запчасти в программе |
 | N\_O\[n\] | O,N | Новая/Контрактная |
 | photo\[\] | строка base64 | Фотография, закодированная в формат base64. Таких параметров в теле запроса может быть неограниченное количество. Сервер при получении этих параметров будет рассматривать их как массив. Ограничение накладывается на общий объем данных в запросе – не более 2 МБ. |
@@ -34,18 +34,17 @@ p6ip ...
 ```xml
 <?xml version="1.0" encoding="windows-1251"?>
 <jcanswer>
-	<message>
-		<result >SUCCESS</result>
-		<code >N0000_SERVICE_SUCCESS</code>
-		<action >ins_f</action>
-		<group id="main" area="parts"><![CDATA[Система обработки данных]]></group>
-		<datetime >2010-04-15 16:29:23</datetime>
-		<text ><![CDATA[Фотография добавлена]]></text>
-		<notice id="N0500_RESULT_NOTICE" ><![CDATA[Добавлено 2 фотографий]]></notice>
-		<debuginfo ><![CDATA[ … ]]></debuginfo>
-	</message>
+    <message>
+        <result >SUCCESS</result>
+        <code >N0000_SERVICE_SUCCESS</code>
+        <action >ins_f</action>
+        <group id="main" area="parts"><![CDATA[Система обработки данных]]></group>
+        <datetime >2010-04-15 16:29:23</datetime>
+        <text ><![CDATA[Фотография добавлена]]></text>
+        <notice id="N0500_RESULT_NOTICE" ><![CDATA[Добавлено 2 фотографий]]></notice>
+        <debuginfo ><![CDATA[ … ]]></debuginfo>
+    </message>
 </jcanswer>
-
 ```
 
 

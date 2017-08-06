@@ -12,4 +12,6 @@
 * [Добавление фотографий](dobavlenie-fotografii.md)
 * [Информация о возможности добавления объявлений.](informatsiya-o-vozmozhnosti-dobavleniya-obyavlenii.md)
 * [Получение информации о счете программы](poluchenie-informatsii-o-schete-programmi.md)
+* [Сколько объявлений было добавлено](skolko-obyavlenii-bilo-dobavleno.md)
+* [Комбинация get\_added, get\_money, get\_status](kombinatsiya-getadded-getmoney-getstatus.md)
 
