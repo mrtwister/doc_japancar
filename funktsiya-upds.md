@@ -27,20 +27,20 @@ s_sn=34itlwk87er9j&p_version=3.0.25&action=upd_s&s_name=Название маг�
 ```xml
 <?xml version="1.0" encoding="windows-1251"?>
 <jcanswer>
-	<message>
-		<result >SUCCESS</result>
-		<code >N0008_SERVICE_SUCCESS</code>
-		<action >upd_s</action>
-		<group id="main"
-		       area="parts">
-			<![CDATA[Система обработки данных]]>
-		</group>
-		<datetime >2010-04-15 15:04:08</datetime>
-		<text >
-			<![CDATA[Данные о магазине обновлены]]>
-		</text>
-		<debuginfo >
-			<![CDATA[Array
+    <message>
+        <result >SUCCESS</result>
+        <code >N0008_SERVICE_SUCCESS</code>
+        <action >upd_s</action>
+        <group id="main"
+               area="parts">
+            <![CDATA[Система обработки данных]]>
+        </group>
+        <datetime >2010-04-15 15:04:08</datetime>
+        <text >
+            <![CDATA[Данные о магазине обновлены]]>
+        </text>
+        <debuginfo >
+            <![CDATA[Array
 (
     [s_sn] => 3387166128
     [id_firms] => 
@@ -59,8 +59,8 @@ s_sn=34itlwk87er9j&p_version=3.0.25&action=upd_s&s_name=Название маг�
     [contact] => Дополнительные сведения
 )
 ]]>
-		</debuginfo>
-	</message>
+        </debuginfo>
+    </message>
 </jcanswer>
 ```
 
