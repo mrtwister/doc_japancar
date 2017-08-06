@@ -14,4 +14,6 @@
 * [Получение информации о счете программы](poluchenie-informatsii-o-schete-programmi.md)
 * [Сколько объявлений было добавлено](skolko-obyavlenii-bilo-dobavleno.md)
 * [Комбинация get\_added, get\_money, get\_status](kombinatsiya-getadded-getmoney-getstatus.md)
+* [Получение номеров объявлений на сервере](poluchenie-nomerov-obyavlenii-na-servere.md)
+* [Поднятие объявлений.](podnyatie-obyavlenii.md)
 
