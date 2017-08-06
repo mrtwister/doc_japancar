@@ -1,4 +1,4 @@
-* [ ] # Функция ins. Добавление объявлений.
+# Функция ins. Добавление объявлений.
 
 | Название параметра | Значение | Описание |
 | :--- | :--- | :--- |
@@ -27,6 +27,33 @@
 | oem\[n\] | текст длиной не более 16 символов | OEM |
 | year\[n\] | текст длиной не более 55 символов | Год |
 | photo\_count\[n\] | целое число до 11 знаков | Количество фотографий у запчасти |
+
+Вид POST запроса:
+
+```
+s_sn=34itlwk87er9j&p_version=3.0.25&action=ins&count=40&id[0]=000000000&code[0]=%C4%C2%C8.091&marka[0]=NISSAN&model[0]=CEDRIC&modelN[0]=189250W&kuzovN[0]=CY31&engineN[0]=VG20-DET&F_R[0]=-&U_D[0]=-&R_L[0]=-&remark[0]=TEST%20!!!&price[0]=0%20%F0%F3%E1.&id_s_typecurrency[0]=4&N_O[0]=O&name[0]=%E4%E2%E8%E3%E0%F2%E5%EB%FC&producer_code[0]=00000000&producer[0]=-&oem[0]=00000000000&year[0]=1989&photo_count[0]=1&id[1]=000000001&code[1]=%C4%C2%C8.091&marka[1]=MITSUBISHI&model[1]=DELICA&modelN[1]=EK8054&kuzovN[1]=P35W&engineN[1]=4D56-T&F_R[1]=-&U_D[1]=-&R_L[1]=-&remark[1]=TEST%20!!!&price[1]=0%20%F0%F3%E1.&id_s_typecurrency[1]=4&N_O[1]=O&name[1]=%E4%E2%E8%E3%E0%F2%E5%EB%FC&producer_code[1]=000000&producer[1]=-&oem[1]=0000000&year[1]=-&photo_count[1]=1
+
+…………………….
+
+&id[39]=000000042&code[39]=%CEC%C2.050&marka[39]=SUBARU&model[39]=LEGACY%20B4&modelN[39]=2SD%20935%2070&kuzovN[39]=BE5&engineN[39]=EJ20&F_R[39]=B&U_D[39]=-&R_L[39]=L&remark[39]=TEST%20!!!%20usa:3157/2sd%20935%20709&price[39]=0%20%F0%F3%E1.&id_s_typecurrency[39]=4&N_O[39]=O&name[39]=%F1%F2%EE%EF&producer_code[39]=2SD%20935%2070&producer[39]=-&oem[39]=-&year[39]=2000&photo_count[39]=0
+```
+
+Ответ:
+
+```xml
+<?xml version="1.0" encoding="windows-1251"?>
+<jcanswer>
+    <message>
+        <result >SUCCESS</result>
+        <action >ins</action>
+        <code >N0000_SERVICE_SUCCESS</code>
+        <group id="main" area="parts"><![CDATA[Система обработки данных]]></group>
+        <datetime >2010-04-15 15:53:43</datetime>
+        <text ><![CDATA[Объявления успешно добавлены]]></text>
+        <debuginfo ><![CDATA[ … ]]></debuginfo>
+    </message>
+</jcanswer>
+```
 
 
 
