@@ -18,5 +18,4 @@
 * [Поднятие объявлений.](podnyatie-obyavlenii.md)
 * [Узнать цену запчасти](uznat-tsenu-zapchasti.md)
 * [Справочники](spravochniki.md)
-* [Общие требования](obschie-trebovaniya.md)
 
