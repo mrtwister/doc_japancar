@@ -1,7 +1,7 @@
 # Summary
 
 * [Вступление](README.md)
-* [Общие требования](chapter1.md)
+* [Общие требования](obschie-trebovaniya.md)
 * [Получение адресов для работы с сервером](chapter1.md)
 * [Передача данных на сервер](peredacha-dannih-na-server.md)
 * [Подробное описание полей ответа сервера](podrobnoe-opisanie-polei-otveta-servera.md)
@@ -16,4 +16,7 @@
 * [Комбинация get\_added, get\_money, get\_status](kombinatsiya-getadded-getmoney-getstatus.md)
 * [Получение номеров объявлений на сервере](poluchenie-nomerov-obyavlenii-na-servere.md)
 * [Поднятие объявлений.](podnyatie-obyavlenii.md)
+* [Узнать цену запчасти](uznat-tsenu-zapchasti.md)
+* [Справочники](spravochniki.md)
+* [Общие требования](obschie-trebovaniya.md)
 
