@@ -8,7 +8,7 @@
 
 ссылка для получения списка сервисов для 1C:
 
-[http://www.japancar.ru/jcgate/gate.php?for=jctrade&object=links&ver=japancar.ru&type=plain\_text&answer\_version=1.1](http://www.japancar.ru/jcgate/gate.php?for=jctrade&object=links&ver=japancar.ru&type=plain_text&answer_version=1.1)
+http://www.japancar.ru/jcgate/gate.php?for=jcoffline&object=links&ver=1C&type=plain\_text
 
 Ответ возвращается в виде текста, где пары имя=значение разделены переводом строки  
 . Первой строкой идет слово «Ok», если при формировании списка не произошло ошибок. Все нужные адреса сервисов находятся между строками «action=begin» и «action=end»  

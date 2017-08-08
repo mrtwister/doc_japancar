@@ -83,17 +83,14 @@ end
 
 Данный сервис позволяет выдать большое количество справочников необходимых для работы с сервером. Для работы с разделом «Автозапчасти» необходим только справочник по типам валют.
 
+Ответ данного сервиса отличается от ответов первых двух. В данном случае выдается ответ строкой кодированной в формате base64. В этой строке содержится несколько комманд на языке SQL, которые должны быть выполнены в программе.
 
+Целостность запроса проверяется по наличию слов @data\_start и @data\_end в тексте ответа.
 
-Ответ данного сервиса отличается от ответов первых двух. В данном случае выдается ответ строкой кодированной в формате base64. В этой строке содержится несколько комманд на языке SQL, которые должны быть выполнены в программе. 
-
-Целостность запроса проверяется по наличию слов @data\_start и @data\_end в тексте ответа. 
-
-Запрос справочника по типам валют: 
+Запрос справочника по типам валют:
 
 ```
 http://www.japancar.ru/jpoffline/gate.php?ver_protocol=1.0.0&act=data_get&answer_type=plain&lang=RU&answer_data_type=insert&table_name=s_typecurrency&fields[]=id&fields[]=name&fields[]=name_bank&fields[]=name_ru&fields[]=name_en&unknown_value=no
-
 ```
 
 Ответ
@@ -112,7 +109,6 @@ INSERT INTO s_typecurrency(id,name,name_bank,name_ru,name_en) VALUES("3","EUR","
 INSERT INTO s_typecurrency(id,name,name_bank,name_ru,name_en) VALUES("2","JPY","JPY","JPY","JPY");
 INSERT INTO s_typecurrency(id,name,name_bank,name_ru,name_en) VALUES("4","Р.","Р.","Р.","Р.");
 @data_end
-
 ```
 
 
