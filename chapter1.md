@@ -2,13 +2,17 @@
 
 Для разных действий программе необходимо будет обращаться к разным сервисам, поэтому перед выполнением каких-либо действий следует получить адреса соответствующих сервисов.
 
-Ссылка для получения списка сервисов для JcTrade:
+Ссылка для программы 1С принимающей ответ в формате XML:  
+http://www.japancar.ru/jcgate/gate.php?for=jctrade&object=links&ver=japancar.ru&type=plain\_text&answer\_version=1.1
 
-[http://www.japancar.ru/jcgate/gate.php?for=jctrade&object=links&ver=japancar.ru&type=plain\_text&answer\_version=1](http://www.japancar.ru/jcgate/gate.php?for=jctrade&object=links&ver=japancar.ru&type=plain_text&answer_version=1)
+Ссылка для старых программ, не поддерживающих ответ в формате XML:  
+http://www.japancar.ru/jcgate/gate.php?for=jcoffline&object=links&ver=1C&type=plain\_text
 
-ссылка для получения списка сервисов для 1C:
+Очень важно наличие или отсутствие параметра answer\_version а так же егозначение: 
 
-[http://www.japancar.ru/jcgate/gate.php?for=jcoffline&object=links&ver=1C&type=plain\_text](http://www.japancar.ru/jcgate/gate.php?for=jcoffline&object=links&ver=1C&type=plain_text)
+* Отсутствие - означает, что программа не ожидает получения ответа в XML  . Используется старыми программами.
+* 1 - ответ в XML + использование JSON для передачи некоторых данных  . Используется программой JcTrade
+* 1.1 - ответ только в XML  . Используется программой 1С
 
 Ответ возвращается в виде текста, где пары имя=значение разделены переводом строки. Первой строкой идет слово «Ok», если при формировании списка не произошло ошибок. Все нужные адреса сервисов находятся между строками «action=begin» и «action=end»  
  Если строк «action=begin» или «action=end» нет в ответе то список считается не полным, и необходим его повторный запрос.
